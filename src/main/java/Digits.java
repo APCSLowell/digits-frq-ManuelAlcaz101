@@ -8,10 +8,9 @@ public class Digits
 	public Digits(int num)
 	{ /* to be implemented in part (a) */ 
 	    digitList = new ArrayList<Integer>();
-	    String line = " " + num;
-	    for(int i = 0; i < line.length(); i++){
+	    String line = "" + num;
+	    for(int i = 0; i < line.length(); i++)
 	       digitList.add(line.charAt(i) - '0');
-	    }
 	}
 
 	public boolean isStrictlyIncreasing()
